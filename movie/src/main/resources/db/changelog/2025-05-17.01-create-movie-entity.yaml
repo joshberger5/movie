@@ -1,0 +1,25 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-movie-entity-table
+      author: jberger
+      changes:
+        - createTable:
+            tableName: movie_entity
+            columns:
+              - column:
+                  name: id
+                  type: UUID
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: title
+                  type: VARCHAR(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: release_date
+                  type: DATE
+              - column:
+                  name: content_rating
+                  type: VARCHAR(6)
