@@ -1,5 +1,10 @@
 package com.movie.movie.domain;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+
+@Getter
+@AllArgsConstructor
 public enum ContentRating {
     G("G"),
     PG("PG"),
@@ -8,8 +13,4 @@ public enum ContentRating {
     NC_17("NC-17");
 
     public final String rating;
-
-    ContentRating(String rating) {
-        this.rating = rating;
-    }
 }
