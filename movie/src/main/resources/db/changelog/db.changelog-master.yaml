@@ -1,0 +1,3 @@
+databaseChangeLog:
+  - include:
+      file: 2025-05-17.01-create-movie-entity.yaml
