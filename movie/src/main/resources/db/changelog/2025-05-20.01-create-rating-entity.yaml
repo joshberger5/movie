@@ -32,19 +32,3 @@ databaseChangeLog:
               - column:
                   name: plot
                   type: INT
-        - addCheckConstraint:
-            tableName: rating_entity
-            constraintName: chk_would_watch_again
-            constraintBody: would_watch_again BETWEEN 0 AND 10
-        - addCheckConstraint:
-            tableName: rating_entity
-            constraintName: chk_acting_quality
-            constraintBody: acting_quality BETWEEN 1 AND 10
-        - addCheckConstraint:
-            tableName: rating_entity
-            constraintName: chk_visual_effects
-            constraintBody: visual_effects BETWEEN 1 AND 10
-        - addCheckConstraint:
-            tableName: rating_entity
-            constraintName: chk_plot
-            constraintBody: plot BETWEEN 1 AND 10

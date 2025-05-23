@@ -1,5 +1,5 @@
 databaseChangeLog:
   - include:
-      file: 2025-05-17.01-create-movie-entity.yaml
+      file: db/changelog/2025-05-17.01-create-movie-entity.yaml
   - include:
-      file: 2025-05-20.01-create-rating-entity.yaml
+      file: db/changelog/2025-05-20.01-create-rating-entity.yaml
